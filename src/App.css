@@ -1,37 +1,179 @@
-.App {
+span {
+  margin: 15px;
+}
+
+h1 {
+  width: 50%;
+  text-align: center;
+  margin-top: 5%;
+  color: darkblue;
+}
+
+header {
+  display: flex;
+}
+
+.logo {
+  width: 15vw;
+  height: 15vw;
+  margin-top: 6vh;
+  margin-left: 12%;
+
+}
+
+.menu-lista {
+  width: 80%;
+  margin: auto;
+  list-style: none;
+  display: flex;
+}
+
+.menu-lista li {
+  margin-left: 2%;
+  width: 100px;
+  border: 2px solid black;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  margin: auto;
+  margin-top: 1%;
+  min-width: 100%;
+}
+
+.btn-tratamiento {
+  width: 300px;
+  height: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 2%;
+  color: #000000
+}
+
+.btn-tratamiento a {
+  text-decoration: none;
+}
+
+.section-escoger-fecha {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.btn-dia {
+  width: 120px;
+  margin: auto;
+  margin-top: 1%;
+}
+
+
+.section-escoger-hora {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.btn-hora {
+  width: 60px;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.section-formulario table {
+  width: 20vw;
+  margin: auto;
+
+}
+
+.section-cards {
+  
+  
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 35vw;
+  height: 30vw;
+  flex-basis: 2%;
+  
+}
+
+.card-tratamiento {
+  width: 35vw;
+  height: 25vw;
+  margin: 1%;
+
+}
+
+.card-tratamiento img {
+  width: 30vw;
+  height: 25vw;
+}
+.nav-title {
+  /*-----------------------------------------------------------------*/
+  position: relative;
+  /*------------------------------------------------------------------*/
+  width: 20vw;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: bold;
+  margin: auto;
+  padding-top: 10%;
+  -webkit-text-stroke: .1vw black;
+}
+
+.nav-title-tratamiento {
+  /*-----------------------------------------------------------------*/
+  position: relative;
+  top: -15vw;
+
+  /*------------------------------------------------------------------*/
+  width: 20vw;
+  font-size: 3vw;
+  color: #ffffff;
+  font-weight: bold;
+  margin: auto;
+  -webkit-text-stroke: .1vw black;
+}
+
+.card#como-llegar {
+  background: url('./como-llegar-5-sentidos-alicante.png') top center no-repeat;
+  background-size: 100%;
+}
+
+.card#coger-cita {
+  background: url('./reservar-cita-5-sentidos-alicante.png') top center no-repeat;
+  background-size: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .logo1 {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
